@@ -4,9 +4,11 @@
 - 來自 [Aoi 6/5晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)
 
 ### 說明
-- 僅限Windows系統執行，點開資料夾內的exe檔即可執行。
-- 執行後就可以縮小到其他視窗做事，只要你按Enter鍵都會被抓到，然後就會有Aoi的叫聲XDD
-- 建議不要狂按，有機率發生Bug xD。
+- 使用Windows函式庫，調用 hook 相關功能來偵測按鍵。並搭配 PortAudio 及 libSndfile 來播放聲音。
+- 右邊的 Release 可以載使用的程式。也可 Clone 或下載 Source Code 看一下這些簡單的 Code。
+  - 僅限 Windows 系統執行，點開資料夾內的 exe 檔即可執行。
+  - 執行後就可以縮小到其他視窗做事，只要按 Enter 鍵都會被抓到，然後就會有Aoi的叫聲XDD。
+  - 建議不要狂按，有機率發生 Bug xD。
 
 ### 聲明
 - 只是寫好玩的，所以沒那麼自由可以自訂化。
