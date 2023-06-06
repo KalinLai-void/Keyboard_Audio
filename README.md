@@ -1,7 +1,8 @@
 ## Keyboard Hook Practice
 
-### 開發動機
-- 來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)
+### 前言
+- 開發動機來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
+- 也有順便剪了[小精華](https://youtu.be/WPq07hRVdo8)記錄一下。
 
 ### 說明
 - 右邊的 Release 可以載使用的程式。也可 Clone 或下載 Source Code 看一下這些簡單的 Code。
@@ -15,9 +16,9 @@
   - 只有寫Enter鍵的部份。
   - 音效可以更改，但檔名要跟原音檔一致（Aoi_20230605.wav），只吃wav檔。
     - 原音效來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7618s)
-- 已知 Bug
-  - 程式開啟一段時間後會自行關閉，目前原因未知。 
 
 ### 備註
+- 已知 Bug
+  - 程式開啟一段時間後會自行關閉，目前原因未知。 
 - 若之後有機會再做自訂化及更多按鈕。
 - 如果Bug可回報我，DC直接私訊「!風凜魂太(void* Kalin);#1580」。
