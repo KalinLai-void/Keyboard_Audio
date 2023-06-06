@@ -16,7 +16,7 @@
   - 目前只有寫 Enter 鍵的部份。
   - 音效可以更改，但檔名要跟原音檔一致（Aoi_20230605.wav），只吃wav檔。
     - 原音效來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7618s)
-- <u>若有興趣，能夠自行 Clone、Fork 或下載 Source Code 看這些簡單的 Code，甚至改寫。</u>
+> 若有興趣，能夠自行 Clone、Fork 或下載 Source Code 看這些簡單的 Code，甚至改寫。
 
 ### 備註
 - 若之後有機會再做自訂化及更多按鈕。
