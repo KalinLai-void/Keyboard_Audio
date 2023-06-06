@@ -22,7 +22,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
     {
         KBDLLHOOKSTRUCT* pKbdllHook = (KBDLLHOOKSTRUCT*)lParam;
         //std::cout << pKbdllHook->scanCode;
-        if (pKbdllHook->scanCode == 28)
+        if (pKbdllHook->scanCode == 28) // 28 is "Enter" key
         {
             HANDLE aoiAudioHandle = CreateThread(0, 0, AoiAudio_Play, 0, 0, 0);
         }
@@ -35,10 +35,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 void InstallHook()
 {
     g_hHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, GetModuleHandle(NULL), 0);
-    if (!g_hHook)
-    {
-        std::cout << "Installing hook failed." << std::endl;
-    }
+    if (!g_hHook) std::cout << "Installing hook failed." << std::endl;
 }
 
 void UninstallHook()
