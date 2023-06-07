@@ -4,9 +4,10 @@
 - 開發動機來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
 - 也有順便剪了[小精華](https://youtu.be/WPq07hRVdo8)記錄一下。
 
-### 說明
-- 右邊的 Release 可以載執行檔。
+### 說明（要安裝請看我）
+- **右邊的 Releases 可以安裝執行檔**。
   - **僅限 Windows 系統執行**，點開資料夾內的 exe 檔即可執行。
+  - 目前已知會被防毒軟體擋掉，**請將程式加入白名單或關閉防毒**，方可正常執行。
   - 執行後就可以縮小到其他視窗做事，只要按 Enter 鍵都會被抓到，然後就會有 Aoi 的叫聲XDD。
   - 建議不要狂按，有機率發生 Bug xD。
 - 使用 Windows 函式庫，調用 hook 相關功能來偵測按鍵。並搭配 [PortAudio](https://github.com/PortAudio/portaudio) 及 [libSndfile](https://github.com/libsndfile/libsndfile) 來播放聲音。
@@ -23,3 +24,4 @@
 - 如有發現 Bug 可回報我，DC 直接私訊「!風凜魂太(void* Kalin);#1580」。
 - 目前已知 Bug：
   - 程式開啟一段時間後會自行關閉，原因未知。 
+  - 會被防毒擋掉，會再想辦法處理。
