@@ -11,10 +11,10 @@
   - 建議不要狂按，有機率發生 Bug xD。
 
 ### 聲明
-> 若有興趣，能夠自行 Clone、Fork 或下載 Source Code 看這些簡單的 Code，甚至改寫。
+> 若有興趣，能夠自行 Clone、Fork 或下載 Source Code，甚至改寫都是沒問題的。
 
 ### 備註
-- 如有發現 Bug 可回報我，DC 直接私訊「!風凜魂太(void* Kalin);#1580」。
+- 如有發現 Bug 要回報或有想法想跟我討論，歡迎 DC 直接私訊「!風凜魂太(void* Kalin);#1580」。
 
 ---
 
