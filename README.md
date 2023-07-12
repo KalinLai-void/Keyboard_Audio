@@ -1,5 +1,5 @@
 ## 有聲鍵盤（Audio Keyboard）
-##### Practice Keyboard Hook and Audio process using C++
+Practice Keyboard Hook and Audio process using C++
 
 ### 前言
 - 開發動機來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
