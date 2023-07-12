@@ -17,17 +17,17 @@
 - 如有發現 Bug 可回報我，DC 直接私訊「!風凜魂太(void* Kalin);#1580」。
 
 ### Logs
-- 2023/06/06 version: 1.0.0
-  - 只是寫好玩的，沒那麼自由可以自訂化。
-	- 只有寫 Enter 鍵的部份。
-	- 音效可以更改，但檔名要跟原音檔一致（Aoi_20230605.wav），只吃wav檔。
-	- 原音效來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7618s)
-  - 搭配 Windows 函式庫，調用 hook 相關功能來偵測按鍵。並搭配 [PortAudio](https://github.com/PortAudio/portaudio) 及 [libSndfile](https://github.com/libsndfile/libsndfile) 來播放聲音。
-  - 執行後會被防毒軟體擋掉，**需將程式加入白名單或關閉防毒**，才可正常執行。
-- 2023/07/13 version: 2.0.0
-  - 使用 C++/CLI .NET Frameworks 撰寫 UI。
-	- 讓使用者能自行自定義各按鍵的音效。
-	- 新增多語系介面（目前僅中文及英文）。
-	- 1.0.0 被防毒軟體擋掉的問題已解決。
-  - 新增設定檔（INI File）讀寫，儲存使用者設定。
-  - 更改聲音引擎，改為遊戲引擎常用的 [fmod](https://www.fmod.com/)（~~算比較熟悉吧XD~~）。
+#### 2023/06/06 version: 1.0.0
+- 只是寫好玩的，沒那麼自由可以自訂化。
+  - 只有寫 Enter 鍵的部份。
+  - 音效可以更改，但檔名要跟原音檔一致（Aoi_20230605.wav），只吃wav檔。
+  - 原音效來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7618s)
+- 搭配 Windows 函式庫，調用 hook 相關功能來偵測按鍵。並搭配 [PortAudio](https://github.com/PortAudio/portaudio) 及 [libSndfile](https://github.com/libsndfile/libsndfile) 來播放聲音。
+- 執行後會被防毒軟體擋掉，需將程式加入白名單或關閉防毒，才可正常執行。
+#### 2023/07/13 version: 2.0.0
+- 使用 C++/CLI .NET Frameworks 撰寫 UI。
+  - **讓使用者能自行自定義各按鍵的音效**。
+  - 新增多語系介面（目前僅中文及英文）。
+  - 1.0.0 被防毒軟體擋掉的問題已解決。
+- 新增設定檔（INI File）讀寫，儲存使用者設定。
+- 更改聲音引擎，改為遊戲引擎常用的 [fmod](https://www.fmod.com/)（~~算比較熟悉吧XD~~）。
