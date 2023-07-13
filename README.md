@@ -13,6 +13,7 @@ Practice Keyboard Hook and Audio process using C++
   - 執行後就可以縮小到其他視窗做事，基本上所有按鍵都會被抓到，有設定音檔的按鍵就會有聲音。
   - 執行後有預設的設定（在 INI file 內，若此檔刪除會新建空白的設定檔）。
   - Settings 頁面可以自行設定按鍵（按 UI 或按鍵盤按鍵都能夠設定）。
+  - **執行後會被防毒軟體擋掉，需將程式加入白名單或關閉防毒**，方可正常執行。
   - 建議不要狂按，可能會發生 Bug xD。
 
 ### 備註
@@ -29,13 +30,11 @@ Practice Keyboard Hook and Audio process using C++
   - 音效可以更改，但檔名要跟原音檔一致（Aoi_20230605.wav），只吃wav檔。
   - 原音效來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7618s)
 - 搭配 Windows 函式庫，調用 hook 相關功能來偵測按鍵。並搭配 [PortAudio](https://github.com/PortAudio/portaudio) 及 [libSndfile](https://github.com/libsndfile/libsndfile) 來播放聲音。
-- 執行後會被防毒軟體擋掉，需將程式加入白名單或關閉防毒，才可正常執行。
 #### 2023/07/13 version: 2.0.0
 - 使用 C++/CLI .NET Frameworks 撰寫 UI。
   - **讓使用者能自行自定義各按鍵的音效**。
 	- 偵測使用者按什麼按鍵並設定，或是從 UI 設定。
   - 新增多語系介面（目前僅中文及英文）。
-  - 1.0.0 被防毒軟體擋掉的問題已解決。
 - 新增設定檔（INI File）讀寫，儲存使用者設定。
 - 更改聲音引擎，改為遊戲引擎常用的 [fmod](https://www.fmod.com/)（~~算比較熟悉吧XD~~）。
   - mp3, wav, ogg等，理論上常見的音檔格式都吃。
