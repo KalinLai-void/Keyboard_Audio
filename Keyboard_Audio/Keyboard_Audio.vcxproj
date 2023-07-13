@@ -130,6 +130,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AboutForm.cpp" />
     <ClCompile Include="GlobalHooks.cpp" />
     <ClCompile Include="INI_Process.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -138,9 +139,14 @@
     <ClCompile Include="SoundSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AboutForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="GlobalHooks.h" />
     <ClInclude Include="INI_Process.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="RootForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -150,12 +156,23 @@
     <ClInclude Include="SoundSystem.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RootForm.resx">
       <DependentUpon>RootForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Keyboard_Audio1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\AoiAhe.ico" />
+    <Image Include="Assets\Github.png" />
+    <Image Include="Assets\Twitter.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

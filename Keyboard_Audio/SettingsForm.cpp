@@ -163,7 +163,11 @@ System::Void KeyboardAudio::SettingsForm::ReloadForm()
 
 System::Void KeyboardAudio::SettingsForm::Back_Btn_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	System::Windows::Forms::DialogResult result = MessageBox::Show("確定不存檔離開嗎？", "", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+	String^ str;
+	if (Main::lang == "zh-TW") str = "確定不存檔離開嗎？";
+	else str = "Are you sure you want to exit without saving?";
+
+	System::Windows::Forms::DialogResult result = MessageBox::Show(str, "Exit?", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
 	if (result == System::Windows::Forms::DialogResult::Yes) this->Close();
 	return System::Void();
 }
@@ -197,7 +201,7 @@ System::Void KeyboardAudio::SettingsForm::Reset_Btn_Click(System::Object^ sender
 System::Void KeyboardAudio::SettingsForm::SelectAudio_Btn_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	OpenFileDialog^ ofd = gcnew OpenFileDialog();
-	ofd->Title = "請選擇欲設定的音檔";
+	ofd->Title = "Select Audio File";
 	ofd->Filter = "Audio File (*.wav;*.mp3;*.ogg)|*.wav;*.mp3;*.ogg";
 	if (ofd->ShowDialog() == System::Windows::Forms::DialogResult::OK)
 	{

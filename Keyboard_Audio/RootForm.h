@@ -3,6 +3,7 @@
 #include "SettingsForm.h"
 #include "GlobalHooks.h"
 #include "SoundSystem.h"
+#include "AboutForm.h"
 
 namespace KeyboardAudio
 {
@@ -50,6 +51,7 @@ namespace KeyboardAudio
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(RootForm::typeid));
 			this->Enable_Btn = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->settingsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -99,6 +101,7 @@ namespace KeyboardAudio
 			this->aboutToolStripMenuItem->Name = L"aboutToolStripMenuItem";
 			this->aboutToolStripMenuItem->Size = System::Drawing::Size(64, 25);
 			this->aboutToolStripMenuItem->Text = L"About";
+			this->aboutToolStripMenuItem->Click += gcnew System::EventHandler(this, &RootForm::aboutToolStripMenuItem_Click);
 			// 
 			// RootForm
 			// 
@@ -108,6 +111,7 @@ namespace KeyboardAudio
 			this->Controls->Add(this->Enable_Btn);
 			this->Controls->Add(this->menuStrip1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"RootForm";
 			this->Text = L"Keyboard Audio";
@@ -133,12 +137,16 @@ namespace KeyboardAudio
 
 		// other forms
 		SettingsForm^ settingForm;
+		AboutForm^ aboutForm;
 
 		System::Void Hooks_KeyDown(System::Object^ sender, KeyEventArgs^ e);
+
+		System::Void AboutForm_FormClosed(System::Object^ sender, System::Windows::Forms::FormClosedEventArgs^ e);
 
 	private: System::Void RootForm_Load(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void EnableBtn_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void settingsToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void RootForm_VisibleChanged(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void aboutToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 };
 };

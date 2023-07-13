@@ -2,20 +2,23 @@
 Practice Keyboard Hook and Audio process using C++
 
 ### 前言
-- 開發動機來自 [Aoi 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
-- 也有順便剪了[小精華](https://youtu.be/WPq07hRVdo8)記錄一下。
+- 開發動機
+  - 來自 [Aoi Hinamori 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
+  - 買 Aoi 聯名鍵帽，要會發出聲音XDD。
+- 也有順便剪了[小精華](https://youtu.be/WPq07hRVdo8)記錄一下（此時是1.0.0）。
 
 ### 說明（要安裝請看我）
-- **右邊的 Releases 可以安裝執行檔**。 （還是 1.0.0 版，2.0.0 還未包）
-  - **僅限 Windows 系統執行**，點開資料夾內的 exe 檔即可執行。
-  - 執行後就可以縮小到其他視窗做事，只要按 Enter 鍵都會被抓到，然後就會有 Aoi 的叫聲XDD。
-  - 建議不要狂按，有機率發生 Bug xD。
-
-### 聲明
-> 若有興趣，能夠自行 Clone、Fork 或下載 Source Code，甚至改寫都是沒問題的。
+- **右邊的 Releases 可以安裝執行檔**。
+  - **僅限 Windows 系統執行**，解壓縮後點開資料夾內的 exe 檔即可執行。
+  - 執行後就可以縮小到其他視窗做事，基本上所有按鍵都會被抓到，有設定音檔的按鍵就會有聲音。
+  - 執行後有預設的設定（在 INI file 內，若此檔刪除會新建空白的設定檔）。
+  - Settings 頁面可以自行設定按鍵（按 UI 或按鍵盤按鍵都能夠設定）。
+  - 建議不要狂按，可能會發生 Bug xD。
 
 ### 備註
+> 若有興趣，歡迎自行 Clone、Fork 或下載 Source Code，甚至改寫都是沒問題的。
 - 如有發現 Bug 要回報或有想法想跟我討論，歡迎 DC 直接私訊「!風凜魂太(void* Kalin);#1580」。
+- 從第一版改到第二版被一堆白癡編碼問題搞死= =
 
 ---
 
@@ -30,7 +33,9 @@ Practice Keyboard Hook and Audio process using C++
 #### 2023/07/13 version: 2.0.0
 - 使用 C++/CLI .NET Frameworks 撰寫 UI。
   - **讓使用者能自行自定義各按鍵的音效**。
+	- 偵測使用者按什麼按鍵並設定，或是從 UI 設定。
   - 新增多語系介面（目前僅中文及英文）。
   - 1.0.0 被防毒軟體擋掉的問題已解決。
 - 新增設定檔（INI File）讀寫，儲存使用者設定。
 - 更改聲音引擎，改為遊戲引擎常用的 [fmod](https://www.fmod.com/)（~~算比較熟悉吧XD~~）。
+  - mp3, wav, ogg等，理論上常見的音檔格式都吃。

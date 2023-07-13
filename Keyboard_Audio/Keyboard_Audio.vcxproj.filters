@@ -36,6 +36,9 @@
     <ClCompile Include="SettingsForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AboutForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RootForm.h">
@@ -56,5 +59,30 @@
     <ClInclude Include="SettingsForm.h">
       <Filter>Form Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutForm.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Keyboard_Audio1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\AoiAhe.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Github.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Twitter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -191,6 +191,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ englishToolStripMenuItem;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(SettingsForm::typeid));
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->SelectAudio_Btn = (gcnew System::Windows::Forms::Button());
 			this->AudioPath_Label = (gcnew System::Windows::Forms::Label());
@@ -1957,14 +1958,14 @@ private: System::Windows::Forms::ToolStripMenuItem^ englishToolStripMenuItem;
 			// zhTWToolStripMenuItem
 			// 
 			this->zhTWToolStripMenuItem->Name = L"zhTWToolStripMenuItem";
-			this->zhTWToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->zhTWToolStripMenuItem->Size = System::Drawing::Size(171, 22);
 			this->zhTWToolStripMenuItem->Text = L"ÁcÅé¤¤¤å (zh-TW)";
 			this->zhTWToolStripMenuItem->Click += gcnew System::EventHandler(this, &SettingsForm::zhTWToolStripMenuItem_Click);
 			// 
 			// englishToolStripMenuItem
 			// 
 			this->englishToolStripMenuItem->Name = L"englishToolStripMenuItem";
-			this->englishToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->englishToolStripMenuItem->Size = System::Drawing::Size(171, 22);
 			this->englishToolStripMenuItem->Text = L"English (en)";
 			this->englishToolStripMenuItem->Click += gcnew System::EventHandler(this, &SettingsForm::englishToolStripMenuItem_Click);
 			// 
@@ -1987,6 +1988,7 @@ private: System::Windows::Forms::ToolStripMenuItem^ englishToolStripMenuItem;
 			this->Controls->Add(this->Back_Btn);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->menuStrip1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->KeyPreview = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"SettingsForm";

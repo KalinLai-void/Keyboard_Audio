@@ -51,6 +51,24 @@ System::Void KeyboardAudio::RootForm::settingsToolStripMenuItem_Click(System::Ob
 	settingForm = gcnew SettingsForm(this); 
 	settingForm->Show();
 	this->Hide();
+	if (aboutForm) aboutForm->Close();
+	return System::Void();
+}
+
+System::Void KeyboardAudio::RootForm::aboutToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	if (!aboutForm || aboutForm->IsDisposed) // if from isn't opened
+	{
+		aboutForm = gcnew AboutForm();
+		aboutForm->FormClosed += gcnew FormClosedEventHandler(this, &KeyboardAudio::RootForm::AboutForm_FormClosed);
+		aboutForm->Show();
+	}
+	return System::Void();
+}
+
+System::Void KeyboardAudio::RootForm::AboutForm_FormClosed(System::Object^ sender, System::Windows::Forms::FormClosedEventArgs^ e)
+{
+	aboutForm = nullptr;
 	return System::Void();
 }
 
@@ -100,6 +118,7 @@ Void KeyboardAudio::RootForm::Hooks_KeyDown(Object^ sender, Windows::Forms::KeyE
 		// copy from .NET unsigned char array to char array
 		Marshal::Copy(arr, 0, c_arr_ptr, arr->Length);
 
+		// sound process
 		FMOD::Sound* soundSample;
 		sound->CreateSound(&soundSample, c_arr);
 		sound->PlayingSound(soundSample, false);

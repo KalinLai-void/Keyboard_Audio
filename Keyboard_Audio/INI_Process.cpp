@@ -1,4 +1,5 @@
 #include "INI_Process.h"
+#include <iostream>
 
 INI_Process::INI_Process(CString filePath)
 {
@@ -26,12 +27,13 @@ CString INI_Process::ReadFromINI(const CString section, const CString key)
 	GetPrivateProfileStringA(CW2A(section), CW2A(key), "", utf8Buffer, MAX_PATH, CW2A(filePath));
 
 	// convert UTF-8 to Unicode (for code process needs)
-	int length = MultiByteToWideChar(CP_UTF8, 0, utf8Buffer, -1, NULL, 0);
+	/*int length = MultiByteToWideChar(CP_UTF8, 0, utf8Buffer, -1, NULL, 0);
 	wchar_t* wideBuffer = new wchar_t[length];
 	MultiByteToWideChar(CP_UTF8, 0, utf8Buffer, -1, wideBuffer, length);
 
 	buffer = wideBuffer;
-	delete[] wideBuffer;
+	std::cout << buffer << std::endl;
 
-	return buffer;
+	delete[] wideBuffer;*/
+	return utf8Buffer;
 }
