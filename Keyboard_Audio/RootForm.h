@@ -122,6 +122,7 @@ namespace KeyboardAudio
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
+			ReloadForm();
 		}
 #pragma endregion
 	public:
