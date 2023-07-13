@@ -14,7 +14,7 @@ Practice Keyboard Hook and Audio process using C++
   - 壓縮檔內有預設的設定（在 INI file 內，若此檔刪除會新建空白的設定檔）。
   - Settings 頁面可以自行設定按鍵（按 UI 或按鍵盤按鍵都能夠設定）。
   - **執行後有可能會被防毒軟體擋掉，需將程式加入白名單或關閉防毒**，方可正常執行。
-  - 建議不要狂按，可能會發生 Bug xD。
+  - 建議不要按得太激烈，可能會發生 Bug xD。
 
 ### 備註
 > 若有興趣，歡迎自行 Clone、Fork 或下載 Source Code，甚至改寫都是沒問題的。
