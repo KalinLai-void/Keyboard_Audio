@@ -4,10 +4,10 @@ Practice Keyboard Hook and Audio process using C++
 ### 前言
 - 開發動機
   - 來自 [Aoi Hinamori 2023/06/05 晚上的直播](https://www.youtube.com/watch?v=9eAVmmSTD58&t=7585s)。
-  - 買 Aoi 聯名鍵帽，要會發出聲音XDD。
+  - 買 [Aoi 聯名鍵帽](https://www.inpad.com.tw/product.php?act=view&id=9313)，要會發出聲音XDD。
 - 也有順便剪了[小精華](https://youtu.be/WPq07hRVdo8)記錄一下（此時是1.0.0）。
 
-### 說明（要安裝請看我）
+### 說明（安裝與使用說明請看我）
 - **右邊的 Releases 可以安裝執行檔**。
   - **僅限 Windows 系統執行**，解壓縮後點開資料夾內的 exe 檔即可執行。
   - 執行後就可以縮小到其他視窗做事，基本上所有按鍵都會被抓到，有設定音檔的按鍵就會有聲音。
