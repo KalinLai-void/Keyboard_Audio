@@ -43,5 +43,5 @@ Practice Keyboard Hook and Audio process using C++
 - 更改聲音引擎，改為遊戲引擎常用的 [fmod](https://www.fmod.com/)（~~算比較熟悉吧XD~~）。
   - mp3, wav, ogg 等，理論上常見的音檔格式都吃。
 #### 2023/07/15 version: 2.0.1
-- 更改程式名稱「歐齁喔齁鍵盤（O-Hou O-Hou Keyvboard）」
+- 更改程式名稱「喔齁喔齁鍵盤（O-Hou O-Hou Keyvboard）」
   - 專案被 [Aoi Hinamori](https://www.youtube.com/@AoiHinamoriCh) 賜名──「歐齁喔齁鍵盤（O-Hou O-Hou Keyvboard）」。[在直播上被賜名的瞬間](https://youtu.be/U6p2EfccTIU?t=3376)
