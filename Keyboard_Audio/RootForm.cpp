@@ -85,12 +85,14 @@ System::Void KeyboardAudio::RootForm::ReloadForm()
 	// Lang init
 	if (Main::lang == "zh-TW")
 	{
+		this->Text = "喔齁喔齁鍵盤";
 		Enable_Btn->Text = "點擊啟動";
 		settingsToolStripMenuItem->Text = "設定";
 		aboutToolStripMenuItem->Text = "關於";
 	}
 	else
 	{
+		this->Text = "O-Hou O-Hou Keyboard";
 		Enable_Btn->Text = "Click to Enable";
 		settingsToolStripMenuItem->Text = "Settings";
 		aboutToolStripMenuItem->Text = "About";
