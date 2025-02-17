@@ -72,7 +72,7 @@ IDI_ICON1               ICON                    "Assets\\AoiAhe.ico"
 
 IDB_PNG1                PNG                     "Assets\\Github.png"
 
-IDB_PNG2                PNG                     "Assets\\Twitter.png"
+IDB_PNG2                PNG                     "Assets\\InfoIcon.png"
 
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////

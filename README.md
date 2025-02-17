@@ -45,3 +45,6 @@ Practice Keyboard Hook and Audio process using C++
 #### 2023/07/15 version: 2.0.1
 - 更改程式名稱「喔齁喔齁鍵盤（O-Hou O-Hou Keyvboard）」
   - 專案被 [Aoi Hinamori](https://www.youtube.com/@AoiHinamoriCh) 賜名──「歐齁喔齁鍵盤（O-Hou O-Hou Keyboard）」。[在直播上被賜名的瞬間](https://youtu.be/U6p2EfccTIU?t=3376)
+#### 2025/02/18 version: 2.0.3
+- 更新函式庫 [fmod](https://www.fmod.com/) 導入方式，直接導入專案資料夾中，而非外部導入。
+- 更新 About 介面的超連結。
